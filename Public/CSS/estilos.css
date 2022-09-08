@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", sans-serif;
+}
+.main-header{
+    background-color: #EAC926;
+    padding: 20px;
+    display: flex;
+}
+.logo{
+    width: 200px;
+}
+.tittle{
+    font-stretch: 24px;
+}
+.buscar{
+    
+    margin: auto;
+}
+.foot{
+    text-align:center;
+    width: 50vh;
+    margin: auto;
+    }
+.icon-foot{
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #1259c3;
+}
+.tittle-foot{
+    color: #666;
+}
+.text-foot{
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 25px;
+}
+.main-header-top-bar{
+    display: block;
+    justify-content: space-around;
+}
+.copy-header{
+    font-weight: 400;
+    text-align: center;
+}
+.main-header-botton-bar {
+    display: none
+}
+.conteiner{
+    display: flex;
+}
+.price{
+    font-size: 18px;
+}
+.descu{
+    font-size: 16px;
+}
+.desc{
+    font-size: 16px;
+}
+.ultimaVisita{
+    margin: 20px;;
+    display: block;
+}
+.ofertas{
+    margin: 20px;
+    display: block;
+}
+.articleA{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    right: 20px;
+}
+.article{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    
+    background-color: #FFF;
+    border-radius: 50%;
+    right: 20px;
+    margin: auto;
+}
+.hamurguer-button{
+    background-color: #1259c3;
+    color: white;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 20px;
+    margin: auto;
+}
+.main-header-botton-bar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+.main-header-botton-bar a {
+    text-decoration: none;
+    color: #262627;
+    display: inline-block;
+    padding: 2  px 0;
+    font-size: 14.3px;
+}
+.producto{
+    width: 150px;
+    margin: auto;
+}
+.banner{
+    display: none;
+}
+@media (min-width: 768px){
+    .main-header-top-bar{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .banner{
+        display:block;
+    }
+    .copy-header{
+        max-width: 300px;
+        text-align: right;
+        margin: auto;
+    }
+    .form-control{
+        width: 50%;
+    }
+    .hamurguer-button{
+        display: none;
+    }
+    .main-header-botton-bar{
+        display: flex ;
+        justify-content: space-between;
+    }
+    .main-header-botton-bar ul{
+        display: flex;
+    }
+    .main-header-botton-bar li{
+        margin: 0 5px;
+    }
+    .ultimaVisita{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .ofertas{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+@media (min-width:1200px){
+    .main-header-top-bar, .main-header-botton-bar{
+        max-width: 1200px;
+        margin: 0;
+    }
+    .form-control{
+        width: 60vh;
+    }
+    .main-header-top-bar{
+        align-items: center;
+    }
+    .main-header-botton-bar li{
+        margin: 0 10px;
+    }
+    .main-header-botton-bar{
+        font-size: 20px;
+    }
+    .copy-header{
+        max-width: none;
+        font-size: 19px;
+        font-weight: 400;
+    }}
+    .ultimaVisita{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .ofertas{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .foot{
+        display: flex;
+        justify-content:space-around
+    }
+    .text-foot{
+        display: block;
+    }
