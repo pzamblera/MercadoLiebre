@@ -176,7 +176,7 @@ body{
     }
 }
 @media (min-width:1200px){
-    .main-header-top-bar, .main-header-botton-bar{
+    .main-header-top-bar {
         max-width: 100%;
         margin: 0;
     }
@@ -190,7 +190,10 @@ body{
         margin: 0 10px;
     }
     .main-header-botton-bar{
+        display: flex;
         font-size: 20px;
+        margin-top: 15px;
+        justify-content: space-between;
     }
     .copy-header{
         max-width: none;
@@ -209,10 +212,13 @@ body{
     }
     .foot{
         display: flex;
-        justify-content:space-around
+        justify-content:space-between;
+        flex-wrap: wrap;
     }
     .text-foot{
-        display: block;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
     .banner{
         display: block;
