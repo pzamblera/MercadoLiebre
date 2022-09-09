@@ -6,10 +6,10 @@ const path = require("path");
 app.listen(process.env.PORT || 3000, function(){
     console.log("Servidor corriendo");
 })
-app.use(express.static(path.join(__dirname, '/public')));
+app.use(express.static(path.join(__dirname, "/public")));
 
 app.get("/", function(req, res){
-    res.sendFile(path.join(__dirname, '/views/home.html'));
+    res.sendFile(path.join(__dirname, "/views/home.html"));
 });
 
 app.get("/register", function(req, res){
