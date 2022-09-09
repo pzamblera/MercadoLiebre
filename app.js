@@ -9,15 +9,15 @@ app.listen(process.env.PORT || 3000, function(){
 app.use(express.static(path.join(__dirname, "/public")));
 
 app.get("/", function(req, res){
-    res.sendFile(path.join(__dirname, "/views/home.html"));
+    res.sendFile(path.join(__dirname, "./views/home.html"));
 });
 
 app.get("/register", function(req, res){
-    res.sendFile(path.join(__dirname, "/views/register.html"));
+    res.sendFile(path.join(__dirname, "./views/register.html"));
 })
 
 app.get("/login", function(req, res){
-    res.sendFile(path.join(__dirname, "/views/login.html"));
+    res.sendFile(path.join(__dirname, "./views/login.html"));
 })
 app.get("*", function(req, res){
     res.send("Ruta restringida");
