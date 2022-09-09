@@ -18,8 +18,7 @@ body{
     font-stretch: 24px;
 }
 .buscar{
-    
-    margin: auto;
+        margin: auto;
 }
 .foot{
     text-align:center;
@@ -55,9 +54,12 @@ body{
 }
 .price{
     font-size: 18px;
+    display: flex;
 }
 .descu{
     font-size: 16px;
+    color: #39b54a;
+    display: flex;
 }
 .desc{
     font-size: 16px;
@@ -69,6 +71,15 @@ body{
 .ofertas{
     margin: 20px;
     display: block;
+}
+.cuerpo{
+    background-color: rgba(212, 207, 207, 0.418);
+}
+.cajaProducto{
+    border: 10px solid rgb(221, 208, 208);
+    background-color: white;
+    box-shadow: 0px 0px 10px rgb(100 100 100);
+    transition: box-shadow 450ms;
 }
 .articleA{
     display: block;
@@ -120,7 +131,7 @@ body{
     margin: auto;
 }
 .banner{
-    display: none;
+    width: 100%;
 }
 @media (min-width: 768px){
     .main-header-top-bar{
@@ -144,10 +155,11 @@ body{
     }
     .main-header-botton-bar{
         display: flex ;
-        justify-content: space-between;
+        justify-content: space-around;
     }
     .main-header-botton-bar ul{
         display: flex;
+        
     }
     .main-header-botton-bar li{
         margin: 0 5px;
@@ -187,12 +199,12 @@ body{
     }}
     .ultimaVisita{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-wrap: wrap;
     }
     .ofertas{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-wrap: wrap;
     }
     .foot{
@@ -200,5 +212,8 @@ body{
         justify-content:space-around
     }
     .text-foot{
+        display: block;
+    }
+    .banner{
         display: block;
     }
